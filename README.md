@@ -2,7 +2,7 @@
 # Trace-Log-Correlation with Opentelemetry
 
 ## Used Technologies
-* 
+
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 * [Go 1.17+](https://go.dev/doc/install)
 * Minikube
