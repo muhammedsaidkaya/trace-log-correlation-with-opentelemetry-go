@@ -17,7 +17,7 @@
 ./scripts/install.sh
 ./scripts/run.sh
 curl http://localhost:9000/albums
-curl http://localhost:9001/albums
+curl http://localhost:9001/albums/1
 curl http://localhost:16686/
 ```
 
