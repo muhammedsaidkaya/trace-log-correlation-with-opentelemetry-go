@@ -1,0 +1,43 @@
+apiVersion: skaffold/v3
+kind: Config
+metadata:
+  name: trace-log-correlation
+build:
+  local:
+    push: false
+    useDockerCLI: true
+    useBuildkit: false
+  artifacts:
+  - image: service1
+    context: ./service1
+    docker:
+      dockerfile: ./deployment/docker/service1.Dockerfile
+  - image: service2
+    context: ./service2
+    docker:
+      dockerfile: ./deployment/docker/service2.Dockerfile
+manifests:
+  kustomize:
+    paths:
+    - deployment
+deploy:
+  kubectl: {}
+portForward:
+  - resourceType: deployment
+    resourceName: service1
+    namespace: default
+    port: 8080
+    address: 0.0.0.0
+    localPort: 9000 # *Optional*
+  - resourceType: deployment
+    resourceName: service2
+    namespace: default
+    port: 8080
+    address: 0.0.0.0
+    localPort: 9001 # *Optional*
+  - resourceType: deployment
+    resourceName: jaeger
+    namespace: default
+    port: 16686
+    address: 0.0.0.0
+    localPort: 16686 # *Optional*
