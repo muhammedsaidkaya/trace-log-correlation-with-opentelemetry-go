@@ -72,10 +72,14 @@ Service1 | Service2
 
 # Resources
 
-* https://skaffold.dev/docs/environment/local-cluster/
-* https://webera.blog/kubernetes-development-workflow-with-skaffold-kustomize-and-kind-12d4a72a2cbf
-* https://www.youtube.com/watch?v=Rm5W6Bh9PIE
-* https://stackoverflow.com/questions/67267610/minikube-running-in-docker-and-port-forwarding
-* https://opentelemetry.io/docs/instrumentation/go/manual/
-* https://github.com/open-telemetry/opentelemetry-go/discussions/2074
-* https://pkg.go.dev/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp#pkg-overview
+* Skaffold
+  * https://skaffold.dev/docs/environment/local-cluster/
+  * https://webera.blog/kubernetes-development-workflow-with-skaffold-kustomize-and-kind-12d4a72a2cbf
+  * https://www.youtube.com/watch?v=Rm5W6Bh9PIE
+* Minikube Port Forwarding
+  * https://stackoverflow.com/questions/67267610/minikube-running-in-docker-and-port-forwarding
+* Opentelemetry-Go Manual Instrumentation
+  * https://opentelemetry.io/docs/instrumentation/go/manual/
+  * https://github.com/open-telemetry/opentelemetry-go/discussions/2074
+  * https://pkg.go.dev/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp#pkg-overview
+  * https://github.com/open-telemetry/opentelemetry-go/tree/main/example/otel-collector
