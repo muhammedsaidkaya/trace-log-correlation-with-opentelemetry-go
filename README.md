@@ -14,20 +14,20 @@
 # Usage
 
 ```
-./install.sh
-./run.sh
+./scripts/install.sh
+./scripts/run.sh
 curl http://localhost:9000/albums
 curl http://localhost:9001/albums
 curl http://localhost:16686/
 ```
 
 ## Logs
-![img.png](img.png)
+![img.png](assets/img.png)
 
 ## Traces (Jaeger)
-![img_1.png](img_1.png)
-![img_2.png](img_2.png)
-![img_3.png](img_3.png)
+![img_1.png](assets/img_1.png)
+![img_2.png](assets/img_2.png)
+![img_3.png](assets/img_3.png)
 
 
 # Resources
